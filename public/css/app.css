@@ -1,0 +1,263 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; 
+    color: #444; 
+}
+
+
+header {
+    background-color: #808080; 
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.6s ease;
+}
+
+header nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+header nav a:hover {
+    color: #fce94f; 
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+main {
+    padding: 40px;
+    background-color: #ffffff; 
+    min-height: calc(100vh - 70px - 40px); 
+}
+
+
+form {
+    background-color: #ffffff; 
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin: 30px auto;
+    animation: fadeIn 0.6s ease;
+}
+
+form label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: bold;
+    color: #6fa3ef; 
+    font-size: 1.1rem;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    border: 2px solid #ddd; 
+    border-radius: 8px;
+    background-color: #fafafa; 
+    color: #444;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form textarea:focus {
+    background-color: #fff; 
+    border-color: #6fa3ef; 
+    outline: none;
+}
+
+
+button {
+    background-color: #6fa3ef; 
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #4682b4; 
+    transform: translateY(-3px);
+}
+
+
+a {
+    color: #6fa3ef; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+    color: #808080; 
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.card {
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 15px; 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 calc(30% - 20px); 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 300px; 
+    margin: 0 auto; 
+}
+
+.card:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); 
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333; 
+    text-align: center;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555; 
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+
+.card a {
+    display: block;
+    text-align: center;
+    color: #808080; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+    padding: 10px;
+    border: 1px solid #808080; 
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card a:hover {
+    color: black; 
+   
+    transform: translateY(-3px);
+    text-decoration: none;
+}
+
+
+.card .actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card .actions a,
+.card .actions button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.card .actions a {
+    color: white;
+    background-color: #6fa3ef; 
+    border: 1px solid transparent;
+}
+
+.card .actions a:hover {
+    background-color: #4682b4; 
+    transform: translateY(-3px);
+}
+
+
+.card .actions .btn-warning {
+    background-color: #8B0000; 
+    color: white;
+    border: 1px solid transparent;
+}
+
+.card .actions .btn-warning:hover {
+    background-color: #8B0000; 
+    transform: translateY(-3px);
+}
+
+
+.card .actions .btn-edit {
+    background-color: #4caf50;
+    color: white;
+}
+
+.card .actions .btn-edit:hover {
+    background-color: #388e3c; 
+}
+
+
+.card .actions .btn-delete {
+    background-color: #8B0000; 
+    color: white;
+}
+
+.card .actions .btn-delete:hover {
+    background-color: #8B0000; 
+}
+
+
+footer {
+    background-color: #808080; 
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
